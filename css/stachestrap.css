@@ -1,0 +1,39 @@
+/*!
+ * Stachestrap v1.0.0 
+ */
+
+/*!
+ * Form Elements (Natural Language) 
+*/
+.nl-text {
+	display:none;
+}
+
+form.natural-language .nl-text {
+	display:inline-block;
+}
+form.natural-language label {
+	display:none;
+}
+
+form.natural-language input {
+	box-shadow:none;
+	border-radius:0px;
+	border:none;
+	border-bottom:1px solid;
+	font-size: inherit;
+	line-height: 1.4;
+	padding: 0px;
+}
+
+form.natural-language .form-group {
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+.form-control:focus {
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px dashed #66afe9;
+	background: rgba(102, 175, 233, 0.06);
+}
