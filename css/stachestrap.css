@@ -2,10 +2,31 @@
  * Stachestrap v1.0.0 
  */
 
-/*!
+/*
+ * Typography 
+*/
+
+.bold, .strong {
+	font-weight:bold;
+}
+
+.uppercase {
+	text-transform:uppercase;
+}
+
+.code {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #c7254e;
+	background-color: #f9f2f4;
+	border-radius: 4px;
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+/*
  * Form Elements (Natural Language) 
 */
-.nl-text, .nl-linebreak {
+.nl-text, .nl-linebreak, #nl-fileUpload, .nl-fileUpload{
 	display:none;
 }
 
@@ -31,6 +52,7 @@ form.natural-language input, form.natural-language select{
 	padding: 0px;
 	-webkit-appearance: none;
 	color: #838383;
+	background:none;
 }
 
 form.natural-language .nl-select {
@@ -58,7 +80,7 @@ form.natural-language .form-group {
 	display: inline-block;
 }
 
-.form-control:focus {
+form.natural-language .form-control:focus {
 	border: none;
 	box-shadow: none;
 	border-bottom: 1px dashed #66afe9;
@@ -109,4 +131,21 @@ form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload
 	box-shadow: none;
 	border-bottom: 1px dashed #66afe9;
 	background: rgba(102, 175, 233, 0.06);
+}
+/*
+ * Forms
+*/
+.formBuffer {
+	display:block;
+	margin-bottom:15px;
+}
+
+/*
+ * Wells
+*/
+
+.well-white {
+	box-shadow:none;
+	background:#fff;
+	border:1px solid #e3e3e3;
 }

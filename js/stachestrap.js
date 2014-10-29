@@ -5,13 +5,23 @@
 if (typeof jQuery === 'undefined') { throw new Error('Stachestrap\'s JavaScript requires jQuery') }
 
 /* ========================================================================
+* Stachestrap: documentation snippets v1.0.0 HT Ben Frain
+http://benfrain.com/use-jquery-to-convert-html-within-code-tags-to-character-entities/
+* ======================================================================== */
+$(document).ready(function() {
+    $('code').each(function() {
+        $(this).text($(this).html());
+    });
+});
+
+/* ========================================================================
 * Stachestrap: natural-language.js v1.0.0
 * ======================================================================== */
 var nlForm = $('#natural-language');
 
 /* Style File Upload Buttons in NL Form */
 var wrapper = $('<div/>').css({height:0,width:0,'overflow':'hidden'});
-var fileInput = $(':file').wrap(wrapper);
+var fileInput = $('#natural-language :file').wrap(wrapper);
 
 fileInput.change(function(){
     $this = $(this);
