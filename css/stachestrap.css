@@ -3,6 +3,15 @@
  */
 
 /*
+ * Demo-specific styles
+*/
+body {
+
+background-color: #F9F9F9; /* Makes Cards look much nicer */
+
+}
+
+/*
  * Typography 
 */
 
@@ -138,6 +147,45 @@ form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload
 .formBuffer {
 	display:block;
 	margin-bottom:15px;
+}
+
+/*
+ * Cards
+*/
+
+.card {
+	padding: 10px;
+	background: transparent;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
+	border-radius: 2px;
+	border-top: 1px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 10px;
+	margin-right:10px;
+}
+
+.card-white {
+	background-color:#fff;
+	color:#585858;
+}
+
+.card-black {
+	background-color:#000;
+	color:#fff;
+}
+
+.card-2 {
+	width:49.11%;
+	float:left;
+}
+
+.card-3 {
+	width:32.42%;
+	float:left;
+}
+
+.card-4 {
+	width:24.1%;
+	float:left;
 }
 
 /*
