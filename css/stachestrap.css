@@ -1,0 +1,151 @@
+/*!
+ * Stachestrap v1.0.0 
+ */
+
+/*
+ * Typography 
+*/
+
+.bold, .strong {
+	font-weight:bold;
+}
+
+.uppercase {
+	text-transform:uppercase;
+}
+
+.code {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #c7254e;
+	background-color: #f9f2f4;
+	border-radius: 4px;
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+/*
+ * Form Elements (Natural Language) 
+*/
+.nl-text, .nl-linebreak, #nl-fileUpload, .nl-fileUpload{
+	display:none;
+}
+
+form.natural-language .nl-text {
+	display:inline-block;
+	height: 34px;
+}
+form.natural-language .nl-linebreak {
+	display:block;
+}
+
+form.natural-language .form-group label {
+	display:none;
+}
+
+form.natural-language input, form.natural-language select{
+	box-shadow:none;
+	border-radius:0px;
+	border:none;
+	border-bottom:1px solid;
+	font-size: inherit;
+	line-height: 1.4;
+	padding: 0px;
+	-webkit-appearance: none;
+	color: #838383;
+	background:none;
+}
+
+form.natural-language .nl-select {
+	position: relative;
+	margin-right: 2px;
+}
+
+form.natural-language .nl-select select {
+	padding-right:15px;
+}
+
+form.natural-language .nl-select:after {
+	content: '\f0d7';
+	font-family: FontAwesome;
+	color: #838383;
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 7px;
+	pointer-events: none;
+}
+
+form.natural-language .form-group {
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+form.natural-language .form-control:focus {
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px dashed #66afe9;
+	background: rgba(102, 175, 233, 0.06);
+}
+
+form.natural-language .form-control::-webkit-input-placeholder {
+	color: #838383;
+}
+form.natural-language .form-control:-moz-placeholder {
+	color: #838383;
+}
+form.natural-language .form-control::-moz-placeholder {
+	color: #838383;
+}
+form.natural-language .form-control:-ms-input-placeholder {
+	color: #838383;
+}
+
+form.natural-language #nl-fileUpload, form.natural-language .nl-fileUpload{
+	line-height: 1.4;
+	display: inline-block;
+	font-size: 1em;
+	background: none;
+	vertical-align: bottom;
+	margin-bottom: -13px;
+	border-bottom: 1px solid;
+	padding-bottom: 7px;
+	color: #838383;
+	padding-right: 20px;
+	margin-right: 2px;
+	position:relative;
+	cursor:pointer;
+}
+form.natural-language #nl-fileUpload:after, form.natural-language .nl-fileUpload:after {
+	content: '\f0ee';
+	font-family: FontAwesome;
+	color: #838383;
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	pointer-events: none;
+	cursor:pointer;
+}
+form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload:hover{
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px dashed #66afe9;
+	background: rgba(102, 175, 233, 0.06);
+}
+/*
+ * Forms
+*/
+.formBuffer {
+	display:block;
+	margin-bottom:15px;
+}
+
+/*
+ * Wells
+*/
+
+.well-white {
+	box-shadow:none;
+	background:#fff;
+	border:1px solid #e3e3e3;
+}
