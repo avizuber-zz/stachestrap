@@ -11,6 +11,10 @@ background-color: #F9F9F9; /* Makes Cards look much nicer */
 
 }
 
+img.full-width {
+	width:100%;
+}
+
 /*
  * Typography 
 */
@@ -160,7 +164,6 @@ form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload
 	border-radius: 2px;
 	border-top: 1px solid rgba(0, 0, 0, 0.02);
 	margin-bottom: 10px;
-	margin-right:10px;
 }
 
 .card-white {
@@ -173,19 +176,47 @@ form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload
 	color:#fff;
 }
 
-.card-2 {
-	width:49.11%;
-	float:left;
+.card-flip-wrap {
+	perspective: 1000;
 }
 
-.card-3 {
-	width:32.42%;
-	float:left;
+.card-flip-wrap:hover .card-flip {
+	transform: rotateY(180deg);
 }
 
-.card-4 {
-	width:24.1%;
-	float:left;
+.card-flip {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.card-a, .card-b {
+	backface-visibility: hidden;
+	width:100%;
+}
+
+.card-a {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.card-b {
+	transform: rotateY(180deg);
+}
+
+
+.card-a {
+	display:block;
+}
+
+.card-b {
+	display:none;
+}
+.card-flip-wrap:hover .card-a {
+	display:none;
+}
+
+.card-flip-wrap:hover .card-b {
+	display:block;
 }
 
 /*
