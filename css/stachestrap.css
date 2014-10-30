@@ -2,6 +2,18 @@
  * Stachestrap v1.0.0 
  */
 
+/* Pallet
+** Syntax is color (text or bg), border, hover (text or bg), border on hover.**
+White: #fff;
+Black: #000;
+Default: #fff, #ccc, #e6e6e6, #adadad;
+Primary: #428bca, #357ebd, #3071a9, #285e8e;
+Success: #5cb85c, #4cae4c, #449d44, #398439;
+Info: #5bc0de, #46b8da, #31b0d5, #269abc;
+Warning: #f0ad4e, #eea236, #ec971f, #d58512;
+Danger: #d9534f, #d43f3a, #c9302c, #ac2925;
+ */
+
 /*
  * Demo-specific styles
 */
@@ -166,13 +178,38 @@ form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload
 	margin-bottom: 10px;
 }
 
-.card-white {
+.card-white, .card-default {
 	background-color:#fff;
 	color:#585858;
 }
 
 .card-black {
 	background-color:#000;
+	color:#fff;
+}
+
+.card-primary {
+	background-color:#428bca;
+	color:#fff;
+}
+
+.card-success {
+	background-color:#5cb85c;
+	color:#fff;
+}
+
+.card-info {
+	background-color:#5bc0de;
+	color:#fff;
+}
+
+.card-warning {
+	background-color:#f0ad4e;
+	color:#fff;
+}
+
+.card-danger {
+	background-color:#d9534f;
 	color:#fff;
 }
 
@@ -227,4 +264,34 @@ form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload
 	box-shadow:none;
 	background:#fff;
 	border:1px solid #e3e3e3;
+}
+.well-black{ 
+	background:#000;
+	border:1px solid #000;
+	color:#fff;
+}
+.well-primary{ 
+	background:#428bca;
+	border:1px solid #357ebd;
+	color:#fff;
+}
+.well-success{ 
+	background:#5cb85c;
+	border:1px solid #4cae4c;
+	color:#fff;
+}
+.well-info{ 
+	background:#5bc0de;
+	border:1px solid #46b8da;
+	color:#fff;
+}
+.well-warning{ 
+	background:#f0ad4e;
+	border:1px solid #eea236;
+	color:#fff;
+}
+.well-danger{ 
+	background:#d9534f;
+	border:1px solid #d43f3a;
+	color:#fff;
 }
