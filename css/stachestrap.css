@@ -295,3 +295,56 @@ form.natural-language #nl-fileUpload:hover, form.natural-language .nl-fileUpload
 	border:1px solid #d43f3a;
 	color:#fff;
 }
+
+/*
+ * Buttons
+*/
+
+.btn-default-inverted {
+	background:#fff;
+	color:#ccc;
+	border:1px solid;
+}
+.btn-default-inverted:hover {
+	color:#585858;
+}
+.btn-primary-inverted {
+	background:#fff;
+	color:#428bca;
+	border:1px solid;
+}
+.btn-primary-inverted:hover {
+	color:#357ebd;
+}
+.btn-success-inverted {
+	background:#fff;
+	color:#5cb85c;
+	border:1px solid;
+}
+.btn-success-inverted:hover {
+	color:#4cae4c;
+}
+.btn-info-inverted {
+	background:#fff;
+	color:#5bc0de;
+	border:1px solid;
+}
+.btn-info-inverted:hover {
+	color:#46b8da;
+}
+.btn-warning-inverted {
+	background:#fff;
+	color:#f0ad4e;
+	border:1px solid;
+}
+.btn-warning-inverted:hover {
+	color:#eea236;
+}
+.btn-danger-inverted {
+	background:#fff;
+	color:#d9534f;
+	border:1px solid;
+}
+.btn-danger-inverted:hover {
+	color:#d43f3a;
+}
